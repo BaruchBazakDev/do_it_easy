@@ -67,3 +67,4 @@ resource "aws_security_group" "loadbalancer_sg" {
   tags = {
     Name = "app-lb-sg"
   }
+}
