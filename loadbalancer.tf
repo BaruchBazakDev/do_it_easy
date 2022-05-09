@@ -1,5 +1,5 @@
 resource "aws_elb" "baruch_tf_app_lb" {
-	name	= ""
+	name	= "baruch-lb"
 	subnets	= [aws_subnet.baruch_tf_1.id, aws_subnet.baruch_tf_2.id]
 	security_groups	= [aws_security_group.loadbalancer_sg.id]
 	listener {
