@@ -8,12 +8,17 @@ variable "instance_type" {
         default = "t2.micro"
 }
 
+variable "single_target" {
+        type = bool
+        default = false
+}
+
 variable "associate_public_ip_address" {
         type = bool
         default = true
 }
 
-variable "kay_name" {
+variable "key_name" {
         type = string
         default = "Baruch_Jenkins"
 }
