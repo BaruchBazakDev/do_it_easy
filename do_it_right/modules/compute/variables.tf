@@ -28,6 +28,11 @@ variable "app_tf_2" {
         default = "baruch_tf_app2"
 }
 
+variable "single_target" {
+	type = bool
+	default = false
+}
+
 variable "load_balancer_name" {
         type = string
         default = "baruch-lb"
