@@ -6,16 +6,16 @@ module "compute" {
         instance_type                   = var.instance_type
         associate_public_ip_address     = var.associate_public_ip_address
         key_name                        = var.key_name
-        app_1_tag                       = var.app_tf_1
-        app_2_tag                       = var.app_tf_2
+        app_tf_1                        = var.app_tf_1
+        app_tf_2                        = var.app_tf_2
         load_balancer_name              = var.load_balancer_name
         instance_port                   = var.instance_port
         instance_protocol               = var.instance_protocol
-        lb_prot                         = var.lb_port
+        lb_port                         = var.lb_port
         lb_protocol                     = var.lb_protocol
-        vpc_name                        = module.network.baruch-vpc
-        subnet_a_name                   = module.network.baruch-tf-1
-        subnet_b_name                   = module.network.baruch-tf-1
+        baruch_vpc                      = module.network.baruch-vpc
+        subnet_a_name                   = module.network.sub_id_1
+        subnet_b_name                   = module.network.sub_id_2
 }
 
 module "network" {
@@ -26,5 +26,8 @@ module "network" {
         subnet2_cidr                    = var.subnet2_cidr
         subnet1_az                      = var.subnet1_az
         subnet2_az                      = var.subnet2_az
+        baruch_vpc                      = var.vpc_name
+        subnet_a_name                   = var.sub_name_1
+        subnet_b_name                   = var.sub_name_2
 
 }

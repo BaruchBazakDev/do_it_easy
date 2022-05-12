@@ -1,7 +1,7 @@
 resource "aws_vpc" "baruch-vpc" {
   cidr_block  = var.vpc_cidr
   tags = {
-    Name = "baruch-vpc"
+    Name = var.vpc_name
   }
 }
 
@@ -10,7 +10,7 @@ resource "aws_subnet" "baruch_tf_1" {
   cidr_block  = var.subnet1_cidr
   availability_zone = var.subnet1_az 
   tags = {
-    Name = "baruch-terraform1-subnet"
+    Name = var.sub_name_1
   }
 }
 
@@ -19,7 +19,7 @@ resource "aws_subnet" "baruch_tf_2" {
   cidr_block  = var.subnet2_cidr
   availability_zone = var.subnet2_az 
   tags = {
-    Name = "baruch-terraform2-subnet"
+    Name = var.sub_name_2
   }
 }
 

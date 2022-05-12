@@ -82,3 +82,19 @@ variable "subnet2_az" {
         type = string
         default = "eu-central-1b"
 }
+
+variable "vpc_name" {
+        type = string
+        default = "baruch-vpc"
+}
+
+variable "sub_name_1" {
+        type = string
+        default = "baruch-terraform1-subnet"
+}
+
+variable "sub_name_2" {
+        type = string
+        default = "baruch-terraform2-subnet"
+
+}

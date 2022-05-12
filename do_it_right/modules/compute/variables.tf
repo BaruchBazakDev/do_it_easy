@@ -29,8 +29,8 @@ variable "app_tf_2" {
 }
 
 variable "single_target" {
-	type = bool
-	default = false
+	    type = bool
+	    default = false
 }
 
 variable "load_balancer_name" {
@@ -56,4 +56,9 @@ variable "lb_port" {
 variable "lb_protocol" {
         type = string
         default = "tcp"
+}
+
+variable "vpc_id" {
+        type = string
+        default = ""
 }

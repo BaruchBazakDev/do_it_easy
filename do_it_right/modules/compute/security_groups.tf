@@ -1,7 +1,7 @@
 resource "aws_security_group" "baruch_tf_app" {
   name        = "baruch-tf-app-sg"
   description = "AWS sg for app instances"
-  vpc_id      = aws_vpc.baruch-vpc.id
+  vpc_id      = var.vpc_id
 
   ingress {
     description     = "Allow port 3000 from locadblancer sg"

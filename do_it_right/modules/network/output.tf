@@ -2,10 +2,10 @@ output "baruch-vpc" {
   value = aws_vpc.baruch-vpc.id
 }
 
-output "baruch-tf-1" {
+output "sub_id_1" {
   value = aws_subnet.baruch-tf-1.id
 }
 
-output "baruch-tf-2" {
+output "sub_id_2" {
   value = aws_subnet.baruch-tf-2.id
 }

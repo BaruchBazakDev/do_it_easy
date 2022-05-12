@@ -1,7 +1,7 @@
 data "aws_vpc" "baruch_do_it_right" {
 	filter {
 		name = "tag:Name"
-		values = [var.vpc_name]
+		values = [var.]
 	}
 }
 
